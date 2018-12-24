@@ -1,22 +1,22 @@
 cdvPluginPostBuildExtras.add({
 
-        android {
-            defaultConfig {
+    android {
+        defaultConfig {
 
-                manifestPlaceholders = [
+            manifestPlaceholders = [
 
-                    XG_ACCESS_ID    :   "$XG_ACCESS_ID",
-                    XG_ACCESS_KEY   :   "$XG_ACCESS_KEY",
-                    HW_APPID        :   "$HW_APPID"
-                ]
-            }
+                    XG_ACCESS_ID : "$XG_ACCESS_ID",
+                    XG_ACCESS_KEY: "$XG_ACCESS_KEY",
+                    HW_APPID     : "$HW_APPID"
+            ]
         }
+    }
 
     dependencies {
         //信鸽jar，包含厂商通道
         compile 'com.tencent.xinge:xinge:4.0.3-otherpush-Release'
         //jg包
-        compile'com.tencent.jg:jg:1.1'
+        compile 'com.tencent.jg:jg:1.1'
         //wup包
         compile 'com.tencent.wup:wup:1.0.0.E-release'
         //mid包，minSdkVersion 14

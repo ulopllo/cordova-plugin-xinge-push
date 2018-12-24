@@ -18,11 +18,6 @@ module.exports = function (ctx) {
 
     logStart();
 
-    if (ctx.opts.platforms.indexOf('android') < 0) {
-        //检查是否有Android平台，没有就直接返回
-        return
-    }
-
     var pushConfig = configContent['push-config'];
     var idStr = configContent['id'];
     var splits = idStr.split(".");
