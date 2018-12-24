@@ -18,6 +18,8 @@ module.exports = function (ctx) {
 
     logStart();
 
+    var configContent = configXmlReader.getConfigContent(ctx);
+
     var pushConfig = configContent['push-config'];
     var idStr = configContent['id'];
     var splits = idStr.split(".");
@@ -32,6 +34,7 @@ module.exports = function (ctx) {
         path = ctx.requireCordovaModule('path');
 
     var filename = name + '-xinge.gradle';
+    printLog(JSON.stringify(ctx.opts));
     var gradleFile = path.join(ctx.opts.projectRoot, 'platforms/android/cordova-plugin-xinge-push/'+filename);
     fs.readFile(gradleFile, 'utf-8', function (err, data) {
         if (err) {
