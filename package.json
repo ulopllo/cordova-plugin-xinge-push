@@ -1,0 +1,52 @@
+{
+  "_from": "git+https://github.com/zhoumo99133/cordova-plugin-xinge-push.git",
+  "_id": "cordova-plugin-xinge-push@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-xinge-push",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/zhoumo99133/cordova-plugin-xinge-push.git",
+    "rawSpec": "https://github.com/zhoumo99133/cordova-plugin-xinge-push.git",
+    "saveSpec": "git+https://github.com/zhoumo99133/cordova-plugin-xinge-push.git",
+    "fetchSpec": "https://github.com/zhoumo99133/cordova-plugin-xinge-push.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/zhoumo99133/cordova-plugin-xinge-push.git#dc81fa8ed3e92dcc8c033b74f2104cac8aaca5ff",
+  "_spec": "https://github.com/zhoumo99133/cordova-plugin-xinge-push.git",
+  "_where": "/Users/yajun/Projects/super-ore-client",
+  "author": {
+    "name": "zhoumoo"
+  },
+  "bugs": {
+    "url": "https://github.com/zhoumo99133/cordova-plugin-xinge-push/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-xinge-push",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova plugin to integrate xinge push",
+  "homepage": "https://github.com/zhoumo99133/cordova-plugin-xinge-push#readme",
+  "keywords": [
+    "cordova",
+    "push",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "ISC",
+  "name": "cordova-plugin-xinge-push",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhoumo99133/cordova-plugin-xinge-push.git"
+  },
+  "version": "1.0.0"
+}
