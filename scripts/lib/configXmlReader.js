@@ -5,23 +5,11 @@ var cordovaContext;
 var projectRoot;
 
 module.exports = {
-    readOptions: readOptions
+    getConfigContent: getConfigContent,
 };
 
 
-function readOptions(ctx) {
+function getConfigContent(ctx) {
     var configFilePath = path.join(ctx.opts.projectRoot, 'config.xml');
-    var configXmlContent = xmlHelper.readXmlAsJson(configFilePath, true);
-
-    // return configXmlContent;
-    return parseConfig(configXmlContent);
-}
-
-
-function parseConfig(configXmlContent) {
-    if (!configXmlContent['push-config']) {
-        return {};
-    }
-
-    return configXmlContent['push-config'];
+    return xmlHelper.readXmlAsJson(configFilePath, true);
 }
